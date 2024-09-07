@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&display=swap');
+
+body{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.header__nav{
+    display: flex;
+    gap: 168px;
+}
+
+.header__nav a{
+    font-weight: 600;
+    font-size: 38px;
+}
+
+.theme-switcher{
+    position: absolute;
+
+    height: 83px;
+    width: 83px;
+    min-height: 83px;
+    min-width: 83px;
+
+    background-image: url(../images/sun.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    margin-top: -20px;
+    margin-left: 15vw;
+}
+
+.logotext__box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: -130px;
+}
+
+.main__title__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__title{
+    font-size: 100px;
+    font-weight: 800;
+    font-family: "Kufam", sans-serif;
+    color: #8068D2;
+
+    margin-right: -50px;
+}
+
+.main__logo{
+    width: 400px;
+    height: 450px;
+
+    background-image: url(../images/palm.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    margin-left: -50px;
+}
+
+.button{
+    background-color: #8068D2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 500;
+    font-size: 36px;
+    color: white;
+
+    cursor: pointer;
+}
+
+.to__works{
+    width: 464px;
+    height: 84px;
+    margin-top: -130px;
+    border-radius: 11px;
+}
+
+.carousel__skins{
+    width: 100%;
+    height: 512px;
+
+    margin-top: 200px;
+    background-color: #8068D2;
+} 
+
+.skins{
+    height: 512px;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.skin{
+    width: 280px !important;
+    height: 400px;
+
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    font-weight: 500;
+    font-size: 48px;
+
+    background-image: linear-gradient(#E1E1E1 300px, #7B7B7B);
+
+    border-radius: 51px !important;
+}
+
+.armor_stand{
+    width: 133px;
+    height: 265px;
+
+    background-size: contain;
+    background-image: url(../images/ArmorStand.png);
+    background-repeat: no-repeat;
+}
