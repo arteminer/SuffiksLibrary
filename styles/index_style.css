@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&display=swap');
 
 :root{
-    --theme-switcher__icon: url(../images/sun.png);
+    --theme-switcher__icon: url(./images/sun.png);
 
     --background-color: #ffffff;
     --mainfont-color: #000000;
@@ -15,7 +15,7 @@
 }
 
 .darkmode{
-    --theme-switcher__icon: url(../images/moon.png);
+    --theme-switcher__icon: url(./images/moon.png);
 
     --background-color: #151515;
     --mainfont-color: #E0E0E0;
@@ -107,7 +107,7 @@ header{
     width: 400px;
     height: 450px;
 
-    background-image: url(../images/palm.png);
+    background-image: url(./images/palm.png);
     background-size: contain;
     background-repeat: no-repeat;
 
@@ -176,7 +176,7 @@ header{
     height: 265px;
 
     background-size: contain;
-    background-image: url(../images/ArmorStand.png);
+    background-image: url(./images/ArmorStand.png);
     background-repeat: no-repeat;
 }
 
@@ -215,7 +215,7 @@ header{
 .information__block__article1__img{
     width: 210px;
     height: 400px;
-    background: url(/images/ArmorStandInfo.png);
+    background: url(./images/ArmorStandInfo.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -223,7 +223,7 @@ header{
 .information__block__article2__img{
     width: 210px;
     height: 400px;
-    background: url(/images/VillagerInfo.png);
+    background: url(./images/VillagerInfo.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -311,7 +311,7 @@ header{
 }
 
 .discord__icon{
-    background-image: url(/images/Discord.png);
+    background-image: url(./images/Discord.png);
     background-size: contain;
     background-repeat: no-repeat;
 
@@ -320,7 +320,7 @@ header{
 }
 
 .telegram__icon{
-    background-image: url(/images/Telegram.png);
+    background-image: url(./images/Telegram.png);
     background-size: contain;
     background-repeat: no-repeat;
 
@@ -412,11 +412,11 @@ footer{
 }
 
 .mono{
-    background-image: url(/images/mono.png);
+    background-image: url(./images/mono.png);
 }
 
 .donal{
-    background-image: url(/images/donal.png);
+    background-image: url(./images/donal.png);
 }
 
 .footer-author{
