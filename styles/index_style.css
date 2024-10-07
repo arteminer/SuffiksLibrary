@@ -1,13 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&display=swap');
 
+:root{
+    --theme-switcher__icon: url(../images/sun.png);
+
+    --background-color: #ffffff;
+    --mainfont-color: #000000;
+
+    --article-color: #EEEEEE;
+    --skin-color: linear-gradient(#E1E1E1 300px, #7B7B7B);
+
+    --discord-color: #5865F2;
+    --telegram-color: #1CA9F8;
+}
+
+.darkmode{
+    --theme-switcher__icon: url(../images/moon.png);
+
+    --background-color: #151515;
+    --mainfont-color: #E0E0E0;
+
+    --article-color: #191919;
+    --skin-color: linear-gradient(#151515 300px, #7B7B7B);
+
+    --discord-color: #3640AE;
+    --telegram-color: #2189C2;
+}
+
 body{
+    background-color: var(--background-color);
     font-family: "Montserrat", sans-serif;
     margin: 0;
 }
 
 a{
     text-decoration: none;
+    color: var(--mainfont-color);
+}
+
+p{
+    margin: 0;
+}
+
+h1{
+    margin: 0;
 }
 
 header{
@@ -29,12 +65,14 @@ header{
 .theme-switcher{
     position: absolute;
 
+    cursor: pointer;
+
     height: 83px;
     width: 83px;
     min-height: 83px;
     min-width: 83px;
 
-    background-image: url(../images/sun.png);
+    background-image: var(--theme-switcher__icon);
     background-size: contain;
     background-repeat: no-repeat;
 
@@ -113,6 +151,10 @@ header{
 }
 
 .skin{
+    color: var(--mainfont-color);
+
+    cursor: grab;
+
     width: 280px !important;
     height: 400px;
 
@@ -124,7 +166,7 @@ header{
     font-weight: 500;
     font-size: 48px;
 
-    background-image: linear-gradient(#E1E1E1 300px, #7B7B7B);
+    background-image: var(--skin-color);
 
     border-radius: 51px !important;
 }
@@ -136,4 +178,255 @@ header{
     background-size: contain;
     background-image: url(../images/ArmorStand.png);
     background-repeat: no-repeat;
+}
+
+.information{
+    display: flex;
+    justify-content: center;
+}
+
+.information__block{
+    height: 1470px;
+    width: 1082px;
+
+    border-radius: 47px;
+
+    margin-top: 212px;
+
+    background-color: var(--article-color);
+}
+
+.information__block__article1{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+.information__block__article2{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 30px;
+    margin-top: 150px;
+}
+
+.information__block__article1__img{
+    width: 210px;
+    height: 400px;
+    background: url(/images/ArmorStandInfo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.information__block__article2__img{
+    width: 210px;
+    height: 400px;
+    background: url(/images/VillagerInfo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.information__block__article2__text{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 20px;
+}
+
+.information__block__article1__text{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.information__block__article2__text h1{
+    font-size: 96px;
+    font-weight: 500;
+    color: #8068D2;
+}
+
+.information__block__article1__text h1{
+    font-size: 96px;
+    font-weight: 500;
+    color: #8068D2;
+}
+
+.information__block__article2__text,.information__block__article1__text p{
+    font-size: 48px;
+    color: var(--mainfont-color);
+}
+
+.information__button{
+    width: 400px;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 7px;
+
+    font-size: 40px;
+    color: #FFFFFF;
+
+    background-color: #8068D2;
+}
+
+.information__block__contacts{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+
+    margin-top: 80px;
+}
+
+.information__block__contacts__content{
+    width: 440px;
+    height: 290px;
+
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    gap: 25px;
+}
+
+.information__block__contacts__content>*{
+    margin-left: 30px;
+}
+
+.discord{
+    background-color: var(--discord-color);
+}
+
+.telegram{
+    background-color: var(--telegram-color);
+}
+
+.discord__icon{
+    background-image: url(/images/Discord.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    width: 40px;
+    height: 30px;
+}
+
+.telegram__icon{
+    background-image: url(/images/Telegram.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    width: 40px;
+    height: 40px;
+}
+
+.discord__title,.telegram__title{
+    display: flex;
+    align-items: center;
+
+    gap: 40px;
+}
+
+.discord__title h1{
+    color: white;
+    font-size: 32px;
+}
+
+.telegram__title h1{
+    color: white;
+    font-size: 32px;
+}
+
+.information__block__contacts__content p{
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.information__block__contacts__content__button{
+    width: 150px;
+    height: 50px;
+
+    background-color: #353535;
+    border-radius: 13px;
+
+    color: white;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+footer{
+    margin-top: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 180px;
+    width: 100%;
+
+    border-top: #8068D2 5px solid;
+}
+
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    width: 1082px;
+}
+
+.footer-info-banks{
+    gap: 20px;
+    display: flex;
+
+    margin-top: 20px;
+}
+
+.footer-info-banks div{
+    width: 82px;
+    height: 48px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.footer-info h1{
+    color: var(--mainfont-color);
+}
+
+.footer-info p{
+    color: var(--mainfont-color);
+}
+
+.mono{
+    background-image: url(/images/mono.png);
+}
+
+.donal{
+    background-image: url(/images/donal.png);
+}
+
+.footer-author{
+    position: absolute;
+
+    margin-left: 80px;
+
+    transform: translateY(127px);
+
+    color: #8068D2;
+    font-size: 36px;
+    font-weight: 500;
 }
